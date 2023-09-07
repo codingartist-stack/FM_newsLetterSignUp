@@ -71,7 +71,7 @@
         </ul>
         <div class="flexGroup">
           <label for="email">Email address</label>
-          <p class="error" data-error="invalidEmail"></p>
+          <p class="error" id="errorMessage"></p>
         </div>
         <input
           type="email"
@@ -80,7 +80,7 @@
           placeholder="email@company.com"
           required
         />
-        <button>Subscribe to monthly newsletter</button>
+        <button id="subButton">Subscribe to monthly newsletter</button>
       </article>
       <article class="thanksPopUp">
         <svg
@@ -110,7 +110,7 @@
           Please open it and click the button inside to confirm your
           subscription.
         </p>
-        <button>Dismiss message</button>
+        <button id="dismissBtn">Dismiss message</button>
       </article>
     </main>
   </body>
