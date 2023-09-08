@@ -9,81 +9,91 @@
   </head>
   <body>
     <main class="mainFlex">
-      <img src="assets/images/illustration-sign-up-mobile.svg" alt="" />
-      <article class="gridGroup">
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul class="unorderList">
-          <li>
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="21"
-                viewBox="0 0 21 21"
-              >
-                <g fill="none">
-                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                  <path
-                    stroke="#FFF"
-                    stroke-width="2"
-                    d="M6 11.381 8.735 14 15 8"
-                  />
-                </g></svg></span
-            >Product discovery and building what matters
-          </li>
-          <li>
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="21"
-                viewBox="0 0 21 21"
-              >
-                <g fill="none">
-                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                  <path
-                    stroke="#FFF"
-                    stroke-width="2"
-                    d="M6 11.381 8.735 14 15 8"
-                  />
-                </g></svg></span
-            >Measuring to ensure updates are a success
-          </li>
-          <li>
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="21"
-                viewBox="0 0 21 21"
-              >
-                <g fill="none">
-                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                  <path
-                    stroke="#FFF"
-                    stroke-width="2"
-                    d="M6 11.381 8.735 14 15 8"
-                  />
-                </g></svg></span
-            >And much more!
-          </li>
-        </ul>
-        <form id="form" action="/" method="get" class="gridGroup">
-          <div class="flexGroup">
-            <label for="email">Email address</label>
-            <p class="error" id="errorMessage"></p>
-          </div>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email@company.com"
-          />
-          <button id="subButton">Subscribe to monthly newsletter</button>
-        </form>
-      </article>
-      <article class="thanksPopUp">
+      <div class="subscriptionContainer" id="subscriptionContainer">
+        <img
+          class="heroImage"
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="illustration of tablet and browsers"
+          srcset="
+            assets/images/illustration-sign-up-mobile.svg,
+            assets/images/illustration-sign-up-desktop.svg
+          "
+        />
+        <article class="gridGroup">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="unorderList">
+            <li>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g></svg></span
+              >Product discovery and building what matters
+            </li>
+            <li>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g></svg></span
+              >Measuring to ensure updates are a success
+            </li>
+            <li>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g></svg></span
+              >And much more!
+            </li>
+          </ul>
+          <form id="form" action="/" method="get" class="gridGroup">
+            <div class="flexGroup">
+              <label for="email">Email address</label>
+              <p class="error" id="errorMessage"></p>
+            </div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+            <button id="subButton">Subscribe to monthly newsletter</button>
+          </form>
+        </article>
+      </div>
+      <article class="thanksPopUp hidden" id="thanksPopUp">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="64"

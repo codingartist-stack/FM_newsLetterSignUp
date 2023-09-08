@@ -121,3 +121,12 @@ li {
 .error {
   color: var(--clr-primary600);
 }
+
+.hidden {
+  display: none;
+}
+
+/* .mainFlex {
+  display: flex;
+  flex-direction: column;
+} */
