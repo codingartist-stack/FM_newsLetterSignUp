@@ -28,6 +28,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     emailError.innerText = messages[0];
     emailInput.classList.add('invalid');
+    emailInput.style.color = 'ff6666';
   }
 
   console.log(messages);
