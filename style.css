@@ -117,3 +117,7 @@ li {
   border: solid var(--clr-primary600);
   background-color: var(--clr-primaryLowOpacity);
 }
+
+.error {
+  color: var(--clr-primary600);
+}
